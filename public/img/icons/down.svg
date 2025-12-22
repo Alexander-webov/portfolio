@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="37" height="16" viewBox="0 0 37 16">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+        fill-opacity: 0.5;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <path id="down" class="cls-1" d="M18,16L0,0S10.965,3,18,3,37,0,37,0Z"/>
+</svg>
