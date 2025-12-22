@@ -118,7 +118,7 @@ function PortfolioSlider() {
       {portfolioData.map((project, i) => (
         <SwiperSlide key={i} style={{ width: 300 }}>
           <Image
-            src={project.image}
+            src={project.image!}
             alt={`Природа ${i + 1}`}
             width={300}
             height={250}
