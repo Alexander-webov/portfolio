@@ -198,7 +198,7 @@ function PortfolioSlider() {
       centeredSlides
       slidesPerView="auto"
       autoplay={{
-        delay: 15000,
+        delay: 1500,
         disableOnInteraction: false,
       }}
       coverflowEffect={{

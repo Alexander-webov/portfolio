@@ -10,7 +10,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${manrope.variable} ${unbounded.variable}`}>
-        <main className="fullpage"> {children}</main>
+        <main className="fullpage snap"> {children}</main>
       </body>
     </html>
   );

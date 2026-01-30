@@ -1,4 +1,3 @@
-import React from "react";
 import PortfolioSlider from "./PortfolioSlider";
 
 function SectionThree() {
