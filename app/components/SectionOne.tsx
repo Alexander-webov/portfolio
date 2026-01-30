@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 function FirstScrean() {
   return (
     <section className="page-section">
@@ -17,9 +19,14 @@ function FirstScrean() {
             I am great decision for your business
           </p>
           <div className="main-btn">
-            <a className="btn btn-modal" href="#modal">
+            <Link
+              className="btn btn-modal"
+              href="https://www.linkedin.com/in/alexzhukovhtml/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               TEXT ME
-            </a>
+            </Link>
           </div>
         </div>
         <div className="main-planet__img">
@@ -910,18 +917,6 @@ function FirstScrean() {
               </g>
             </g>
           </svg>
-        </div>
-        <div className="arrow__down">
-          <a href="#secondPage">
-            <svg xmlns="http://www.w3.org/2000/svg" width="37px" height="16px">
-              <path
-                fillRule="evenodd"
-                fillOpacity="0.502"
-                fill="rgb(255, 255, 255)"
-                d="M18.000,16.000 L-0.000,-0.000 C-0.000,-0.000 10.965,2.999 18.000,2.999 C25.035,2.999 37.000,-0.000 37.000,-0.000 L18.000,16.000 Z"
-              />
-            </svg>
-          </a>
         </div>
       </div>
     </section>

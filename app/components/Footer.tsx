@@ -1,10 +1,14 @@
+import Link from "next/link";
 import React from "react";
 
 function Footer() {
   return (
     <footer className="footer">
-      <a href="zhukova-webdesign.ru">zhukov web developer</a> © 2025 | powered
-      by <a href="https://github.com/Alexander-webov">Alex</a>
+      <Link href="https://github.com/Alexander-webov">
+        zhukov web developer
+      </Link>{" "}
+      © 2019-2026 | powered by{" "}
+      <Link href="https://www.linkedin.com/in/alexzhukovhtml/">Alex</Link>
     </footer>
   );
 }

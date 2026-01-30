@@ -47,8 +47,16 @@ body {
   font-weight: 700;
   position: relative;
   color: #ffffff;
-  font-family: var(--text), system-ui, -apple-system, "Segoe UI", Roboto, Arial,
-    "Noto Sans", "Liberation Sans", sans-serif;
+  font-family:
+    var(--text),
+    system-ui,
+    -apple-system,
+    "Segoe UI",
+    Roboto,
+    Arial,
+    "Noto Sans",
+    "Liberation Sans",
+    sans-serif;
 }
 
 h1,
@@ -115,6 +123,7 @@ h3 {
 
       a {
         padding: 10px 0;
+        font-size: 22px;
       }
       a:hover {
         color: #7beddc;
@@ -477,6 +486,51 @@ about
   opacity: 1;
 }
 
+/* PORTFOLIO SLIDER */
+
+.portfolio--slider {
+  border-radius: 12px;
+  background-color: #4b436c;
+}
+
+.portfolio--slider-img {
+  object-fit: cover;
+  height: 250px;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+.portfolio--slider__box {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  min-height: 140px;
+  padding: 10px 15px;
+}
+.portfolio--slider__box-title {
+  color: #31c5e5;
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.portfolio--slider__items {
+  display: flex;
+  gap: 7px;
+  text-align: center;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+.portfolio--slider__item {
+  color: #ccd6f6;
+  font-weight: 300;
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 12px;
+  padding: 5px 15px;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+.portfolio--slider__item-link {
+  font-weight: 400;
+}
 /*
 
 contacts
@@ -524,6 +578,56 @@ contacts
   }
 }
 
+/* 
+  &-menu {
+    li {
+      display: inline-block;
+      font-weight: 300;
+      transition: all 0.5s;
+      position: relative;
+      padding-bottom: 10px;
+
+      a {
+        padding: 10px 0;
+        font-size: 22px;
+      }
+      a:hover {
+        color: #7beddc;
+      }
+
+      &.active a {
+        color: #7beddc;
+      }
+    }
+
+    li + li {
+      margin-left: 40px;
+    }
+  }
+}
+
+.header-menu__list li:after {
+  content: "";
+  background-color: #7beddc;
+  height: 1px;
+  width: 0%;
+  left: 50%;
+  bottom: 0px;
+  position: absolute;
+  -webkit-transition: width 0.3s ease-in-out;
+  -moz--transition: width 0.3s ease-in-out;
+  transition: width 0.3s ease-in-out;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+.header-menu__list li:hover:after,
+.header-menu__list li:focus:after {
+  width: 100%;
+}
+*/
+
 .contacts-content {
   width: 50%;
   display: flex;
@@ -539,6 +643,13 @@ contacts
   &__list {
     font-size: 22px;
     font-weight: 300;
+    a:hover {
+      color: #7beddc;
+    }
+
+    &.active a {
+      color: #7beddc;
+    }
 
     li {
       margin-top: 25px;
@@ -546,7 +657,7 @@ contacts
   }
 
   &__mail {
-    padding-left: 70px;
+    padding-left: 50px;
     position: relative;
 
     &::before {
@@ -554,7 +665,7 @@ contacts
       position: absolute;
       top: 50%;
       transform: translateY(-50%);
-      left: 30px;
+      left: 0px;
       background: url("/img/icons/e-mail.svg") left no-repeat;
       height: 30px;
       width: 30px;
@@ -562,27 +673,23 @@ contacts
   }
 
   &__phone {
-    padding-left: 70px;
+    padding-left: 50px;
     position: relative;
-
-    img {
-      padding-left: 15px;
-    }
 
     &::before {
       content: "";
       position: absolute;
       top: 50%;
       transform: translateY(-50%);
-      left: 30px;
+      left: 0px;
       background: url("/img/icons/phone.svg") left no-repeat;
       height: 30px;
       width: 30px;
     }
   }
 
-  &__skype {
-    padding-left: 70px;
+  &__github {
+    padding-left: 50px;
     position: relative;
 
     &::before {
@@ -590,8 +697,23 @@ contacts
       position: absolute;
       top: 50%;
       transform: translateY(-50%);
-      left: 30px;
-      background: url("/img/icons/skype.svg") left no-repeat;
+      left: -5px;
+      background: url("/img/icons/github-01-svgrepo-com.svg") left no-repeat;
+      height: 30px;
+      width: 30px;
+    }
+  }
+  &__linkedin {
+    padding-left: 50px;
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      left: -5px;
+      background: url("/img/icons/linkedin-sv.svg") left no-repeat;
       height: 30px;
       width: 30px;
     }
@@ -611,34 +733,6 @@ contacts
     align-items: center;
     justify-content: center;
     margin-top: 25px;
-  }
-}
-
-.contacts-content__btn:nth-child(1) {
-  position: relative;
-
-  &::before {
-    position: absolute;
-    content: "Смотреть портфолио";
-    top: 50%;
-    transform: translateY(-50%);
-    left: 70px;
-    width: 200px;
-    font-weight: 300;
-  }
-}
-
-.contacts-content__btn:nth-child(2) {
-  position: relative;
-
-  &::before {
-    position: absolute;
-    content: "Заполнить бриф";
-    top: 50%;
-    transform: translateY(-50%);
-    left: 70px;
-    width: 200px;
-    font-weight: 300;
   }
 }
 
