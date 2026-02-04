@@ -10,12 +10,10 @@ function SectionTwo() {
             </div>
 
             <p className="about-content-smallText">
-              I’m a software engineer specializing in creating user-friendly
+              I’m a Frontend Engineer specializing in creating user-friendly
               websites. I have more than four years of experience. My experience
-              included Wildberries company, a large marketpalce company, where I
-              developed corporate portals. My bachelor's degree in Computer
-              Science has significantly contributed to my work. Web development
-              is my passion,{" "}
+              included a large marketpalce company, freelance and digital
+              company. Web development is my passion,{" "}
               <span className="about-content-smallText--color">
                 and I truly enjoy what I do.
               </span>

@@ -151,13 +151,13 @@ const portfolioData = [
     image: porf18,
     tags: ["HTML", "CSS", "javascript"],
   },
-  {
+  /*   {
     url: "https://alexander-webov.github.io/cat-test-task/",
     name: "cat",
     urlGitHub: "https://github.com/Alexander-webov/cat-test-task",
     image: porf19,
     tags: ["HTML", "CSS", "javascript"],
-  },
+  }, */
 
   {
     url: "https://alexander-webov.github.io/kwork-lp/",
@@ -173,13 +173,13 @@ const portfolioData = [
     image: porf15,
     tags: ["HTML", "SCSS", "jquery"],
   },
-  {
+  /*   {
     url: "https://alexander-webov.github.io/add_js_promo_site/",
     name: "BMW 6",
     urlGitHub: "https://github.com/Alexander-webov/add_js_promo_site",
     image: porf21,
     tags: ["HTML", "CSS", "javascript"],
-  },
+  }, */
   {
     url: "https://alexander-webov.github.io/lp-realty/",
     name: "realty",
@@ -208,7 +208,7 @@ function PortfolioSlider() {
         modifier: 1,
         slideShadows: true,
       }}
-      modules={[Pagination, Navigation, EffectCoverflow, Autoplay]}
+      modules={[Pagination, Navigation, EffectCoverflow /* Autoplay */]}
       className="mySwiper"
     >
       {portfolioData.map((project, i) => (

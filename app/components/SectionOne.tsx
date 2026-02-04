@@ -15,9 +15,10 @@ function FirstScrean() {
               Software Engineer.
             </span>
           </h1>
-          <p className="main-descr animate__animated animate__bounceInUp animate__delay-1s">
-            I am great decision for your business
-          </p>
+          {/*   <p className="main-descr animate__animated animate__bounceInUp animate__delay-1s">
+            I build production web apps: SaaS dashboards, e-commerce, internal
+            tools.
+          </p> */}
           <div className="main-btn">
             <Link
               className="btn btn-modal"
