@@ -34,6 +34,7 @@ import porf18 from "@/public/img/portfolio/18.png";
 import porf19 from "@/public/img/portfolio/19.png";
 import porf20 from "@/public/img/portfolio/20.png";
 import porf21 from "@/public/img/portfolio/21.png";
+import porf22 from "@/public/img/portfolio/21.png";
 import Link from "next/link";
 
 const portfolioData = [
@@ -43,6 +44,13 @@ const portfolioData = [
     name: "ya sushi",
     image: porf2,
     tags: ["supabase", "React", "Redux", "react-router"],
+  },
+  {
+    url: "https://the-ice-creams-store.vercel.app/",
+    urlGitHub: "https://github.com/Alexander-webov/the-ice-creams-store",
+    name: "ya sushi",
+    image: porf22,
+    tags: ["supabase", "Next", "zustand", "prisma"],
   },
   {
     url: "https://store-big-sneakers.vercel.app/",
