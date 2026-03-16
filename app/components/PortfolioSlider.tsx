@@ -34,7 +34,7 @@ import porf18 from "@/public/img/portfolio/18.png";
 import porf19 from "@/public/img/portfolio/19.png";
 import porf20 from "@/public/img/portfolio/20.png";
 import porf21 from "@/public/img/portfolio/21.png";
-import porf22 from "@/public/img/portfolio/21.png";
+import porf22 from "@/public/img/portfolio/22.png";
 import Link from "next/link";
 
 const portfolioData = [
