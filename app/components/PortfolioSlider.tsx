@@ -48,7 +48,7 @@ const portfolioData = [
   {
     url: "https://the-ice-creams-store.vercel.app/",
     urlGitHub: "https://github.com/Alexander-webov/the-ice-creams-store",
-    name: "ya sushi",
+    name: "ice creams store",
     image: porf22,
     tags: ["supabase", "Next", "zustand", "prisma"],
   },
